@@ -281,3 +281,10 @@ start_time = time.perf_counter()
 args = parse_arguments()
 
 setup_logging(args.log_level)
+
+rum_sum = process_enterprise(args)
+
+print_summary(rum_sum)
+
+end_time = time.perf_counter()
+elapsed_time = end_time - start_time
