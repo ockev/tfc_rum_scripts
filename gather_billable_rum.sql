@@ -36,3 +36,5 @@ WHERE
 SELECT COUNT(w.id) 
 FROM rails.workspaces w, rails.organizations o
 WHERE o.name like '%<update org name>%'
+AND w.organization_id = o.id
+AND w.discarded_at is null;
