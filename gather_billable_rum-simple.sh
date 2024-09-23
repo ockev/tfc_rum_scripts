@@ -154,3 +154,9 @@ main () {
     org_rum+=$workspace_billable_rum
     echo "${workspace_ids[$itr]} ${workspace_names[$itr]} $workspace_billable_rum"
   done
+
+  echo "--------------------------------"
+  echo "Organization RUM total: $org_rum"
+}
+
+main "$@"
